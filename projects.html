@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Projects | Akarsh Kudrimoti</title>
+<meta name="description" content="Akarsh Kudrimoti, Computer Engineering student at Georgia Tech. Systems, edge AI, and embedded software.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><nav class="nav"><a class="brand" href="index.html">Akarsh <span>Kudrimoti</span></a>
+<button id="menu" aria-label="Open menu" onclick="document.getElementById('nl').classList.toggle('open')">Menu</button>
+<ul id="nl"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="resume.html">Resume</a></li><li><a href="goals.html">Career Goals</a></li><li><a href="projects.html" class=on>Projects</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
+<main>
+<p class="kicker">Portfolio</p><h1>Projects</h1>
+<p class="lede">Things I've built, newest first. Each one starts with a problem I wanted to understand better.</p>
+
+<div class="card" style="margin-top:24px;border-color:#b3862b">
+<p class="kicker" style="margin-bottom:4px">Featured · ECE 1100 Discovery Project</p>
+<h3 style="margin-top:0">On-Device Gesture Recognition with an ESP32-S3</h3>
+<p>A microcontroller that recognizes hand gestures with a tiny ML model running on the chip itself, no cloud required.</p>
+<span class="tag">ESP32-S3</span><span class="tag">FreeRTOS</span><span class="tag">I2C</span><span class="tag">TinyML</span>
+<p style="margin-top:12px"><a class="btn" href="discovery.html">Read the feature</a></p>
+</div>
+
+<h2>Mesh Search</h2>
+<p class="prose">A distributed search engine in Rust that runs across a mesh of nodes connected by simulated Wi-Fi and Bluetooth links. A question goes in at any node and floods outward hop by hop. Each node searches its own documents and sends back only its best matches, so documents never leave the device they live on. The entry node merges everyone's results with reciprocal rank fusion. Every link is encrypted with the Noise protocol, and if the coordinating node dies, the rest elect a new one in about five to seven seconds.</p>
+<span class="tag">Rust</span><span class="tag">TCP</span><span class="tag">Noise encryption</span><span class="tag">Leader election</span>
+<figure><img src="mesh.svg" alt="Diagram of a query flooding from an entry node across seven mesh nodes over Wi-Fi and BLE links"><figcaption>How a query moves through the mesh.</figcaption></figure>
+
+<h2>Diligence.AI at Alphius</h2>
+<p class="prose">Private equity teams spend weeks reading filings before a deal. I built the engine that does a first pass for them. It ingests over 10,000 pages of filings per day with spaCy and Spark, stores and retrieves them from PostgreSQL, and serves a risk score through a GraphQL API. Adding caching cut resolver latency by 40% under production load.</p>
+<span class="tag">Python</span><span class="tag">Spark</span><span class="tag">PostgreSQL</span><span class="tag">Azure</span>
+<figure><img src="diligence.svg" alt="Pipeline diagram: filings to NLP ingest to storage and retrieval to risk score API"><figcaption>The Diligence.AI pipeline.</figcaption></figure>
+
+<h2>Crawfish</h2>
+<p class="prose">An open-source framework for running AI agents the way Terraform runs infrastructure. You plan, review, and apply. Every run leaves a signed receipt that records what the agent was allowed to do, what it did, and what happened, so you can replay and audit it later. I co-build it with Neal Kotval.</p>
+<span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">MCP</span>
+<figure><img src="crawfish.svg" alt="Crawfish workflow: plan, apply, state and replay, signed receipt"><figcaption>The Crawfish run lifecycle.</figcaption></figure>
+
+<h2>More projects</h2>
+<div class="grid">
+<div class="card"><h3>Redis Clone with Vector Search</h3><p>An in-memory vector store in C++17 with an epoll event loop, a custom hash map, and KNN search. int8 quantization cut memory per vector 4x.</p></div>
+<div class="card"><h3>LLM Infrastructure Home Lab</h3><p>A self-hosted GPU server running local models at 45 tokens/s for 5 users on Kubernetes, monitored with Prometheus and Grafana.</p></div>
+<div class="card"><h3>Legicycle</h3><p>An AI-native platform for tracking and analyzing Georgia legislation, with a bill tracker and a research assistant called Clarity.</p></div>
+<div class="card"><h3>Inflect</h3><p>Hackathon project: webcam gaze tracking plus a single facial switch so people with ALS or paralysis can control a computer and speak.</p></div>
+</div>
+</main>
+<footer>© 2026 Akarsh Kudrimoti · Georgia Tech Computer Engineering · <a href="https://github.com/akarshkudrimoti">GitHub</a> · <a href="https://www.linkedin.com/in/akudrimoti">LinkedIn</a></footer>
+</body></html>

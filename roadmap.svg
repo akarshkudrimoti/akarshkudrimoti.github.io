@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" font-family="Inter,Arial,sans-serif">
+<rect width="900" height="300" fill="#fff"/>
+<text x="30" y="40" font-size="20" font-weight="700" fill="#16181d">My ECE Roadmap</text>
+<line x1="60" y1="150" x2="850" y2="150" stroke="#e5e2da" stroke-width="6" stroke-linecap="round"/>
+<g font-size="14" fill="#16181d" text-anchor="middle">
+<circle cx="100" cy="150" r="14" fill="#003057"/><text x="100" y="110" font-weight="700">2025–26</text><text x="100" y="190">GT start · Alphius</text><text x="100" y="208">SSRL flight software</text>
+<circle cx="290" cy="150" r="14" fill="#003057"/><text x="290" y="110" font-weight="700">Fall 2026</text><text x="290" y="190">ECE 2035 · ANSR + NEXS</text><text x="290" y="208">Discovery Project</text>
+<circle cx="480" cy="150" r="14" fill="#b3862b"/><text x="480" y="110" font-weight="700">2027</text><text x="480" y="190">Architecture + OS core</text><text x="480" y="208">Systems internship</text>
+<circle cx="670" cy="150" r="14" fill="#b3862b"/><text x="670" y="110" font-weight="700">2027–28</text><text x="670" y="190">Threads: Distributed SW</text><text x="670" y="208">+ Systems &amp; Architecture</text>
+<circle cx="830" cy="150" r="14" fill="#eaaa00"/><text x="830" y="110" font-weight="700">May 2028</text><text x="830" y="190">B.S. CmpE</text><text x="830" y="208">→ AI infra / edge</text>
+</g>
+<text x="30" y="275" font-size="13" fill="#5b6170">Navy = done/in progress · Gold = planned</text>
+</svg>

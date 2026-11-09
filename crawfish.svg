@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" font-family="Inter,Arial,sans-serif">
+<rect width="900" height="240" fill="#fff"/>
+<text x="30" y="38" font-size="20" font-weight="700" fill="#16181d">Crawfish: plan → apply → verify for AI agents</text>
+<defs><marker id="c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9aa3b2"/></marker></defs>
+<g font-size="15" text-anchor="middle" font-weight="700">
+<rect x="40" y="85" width="180" height="80" rx="40" fill="#f2efe7"/><text x="130" y="131" fill="#16181d">craw plan</text>
+<rect x="260" y="85" width="180" height="80" rx="40" fill="#f2efe7"/><text x="350" y="131" fill="#16181d">craw apply</text>
+<rect x="480" y="85" width="180" height="80" rx="40" fill="#f2efe7"/><text x="570" y="131" fill="#16181d">state + replay</text>
+<rect x="700" y="85" width="170" height="80" rx="40" fill="#003057"/><text x="785" y="131" fill="#fff">signed receipt</text>
+</g>
+<g stroke="#9aa3b2" stroke-width="2.5" marker-end="url(#c)"><line x1="222" y1="125" x2="256" y2="125"/><line x1="442" y1="125" x2="476" y2="125"/><line x1="662" y1="125" x2="696" y2="125"/></g>
+<text x="450" y="205" text-anchor="middle" font-size="13" fill="#5b6170">Every agent run leaves a verifiable record of what it planned, what it did, and what happened</text>
+</svg>

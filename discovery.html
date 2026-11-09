@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Discovery Project | Akarsh Kudrimoti</title>
+<meta name="description" content="Akarsh Kudrimoti, Computer Engineering student at Georgia Tech. Systems, edge AI, and embedded software.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><nav class="nav"><a class="brand" href="index.html">Akarsh <span>Kudrimoti</span></a>
+<button id="menu" aria-label="Open menu" onclick="document.getElementById('nl').classList.toggle('open')">Menu</button>
+<ul id="nl"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="resume.html">Resume</a></li><li><a href="goals.html">Career Goals</a></li><li><a href="projects.html" class=on>Projects</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
+<main>
+<p class="kicker">Discovery Project Feature</p><h1>On-Device Gesture Recognition with an ESP32-S3</h1>
+<p class="note"><b>Status: in progress.</b> Final results, photos, and a demo video will be added before the Discovery Project Showcase.</p>
+<figure><img src="discovery.svg" alt="Block diagram: MPU-6050 sensor over I2C into an ESP32-S3 running sampling, feature, and TinyML tasks, served to a Wi-Fi web page"><figcaption>System block diagram.</figcaption></figure>
+<div class="prose">
+<h2>The Problem</h2>
+<p>Most AI today runs in the cloud. Your device collects data, sends it to a server, and waits for an answer. That works for a chatbot, but it breaks down for anything that has to react instantly, run on a battery, or work without internet. A wearable that recognizes a gesture shouldn't need a data center. I got interested in this after researching Qualcomm's FastConnect 7900, which runs a small AI model directly on a Wi-Fi chip to make decisions in microseconds. I wanted to find out what it actually takes to fit a useful model onto a microcontroller with a few hundred kilobytes of memory.</p>
+<h2>The Process</h2>
+<p>The system has three parts. An MPU-6050 motion sensor measures acceleration and rotation. It talks to an ESP32-S3 microcontroller over I2C, a two-wire bus I'd already debugged on flight hardware at the Small Satellite Research Lab. On the ESP32-S3, FreeRTOS runs separate tasks: one samples the sensor at a fixed rate, one slices the readings into short windows and computes features, and one runs a small neural network trained to tell gestures apart. A queue passes data between tasks so a slow step never makes the sampler miss readings.</p>
+<p>The model is trained on a laptop from gesture recordings I collect myself, then shrunk and converted so it fits in the chip's memory. That step is the heart of TinyML: trading a little accuracy for a model small and fast enough to run on the device. Finally, the ESP32-S3 hosts a simple web page over Wi-Fi that shows the detected gesture live, so anyone on the same network can watch it work.</p>
+<h2>The Outcome</h2>
+<p>The goal is a board that recognizes a small set of gestures in real time with no cloud connection. I'll measure accuracy on held-out recordings and the time from motion to prediction. Results and photos of the hardware will be posted here before the Showcase.</p>
+<h2>What I'm Learning</h2>
+<p>This project ties together the parts of ECE I care about most: embedded C, real-time scheduling, sensor buses, and machine learning under tight resource limits. It's a small version of the edge AI problem I want to work on in my career.</p>
+</div>
+</main>
+<footer>© 2026 Akarsh Kudrimoti · Georgia Tech Computer Engineering · <a href="https://github.com/akarshkudrimoti">GitHub</a> · <a href="https://www.linkedin.com/in/akudrimoti">LinkedIn</a></footer>
+</body></html>

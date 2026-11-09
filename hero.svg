@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 400" font-family="Inter,Arial,sans-serif">
+<rect width="480" height="400" rx="20" fill="#003057"/>
+<g stroke="#b3862b" stroke-opacity=".35" fill="none">
+<ellipse cx="240" cy="200" rx="200" ry="70" transform="rotate(-18 240 200)"/>
+<ellipse cx="240" cy="200" rx="150" ry="150" stroke-dasharray="4 8"/>
+</g>
+<rect x="160" y="120" width="160" height="160" rx="18" fill="#0a3f6b" stroke="#b3862b" stroke-width="3"/>
+<g stroke="#b3862b" stroke-width="3">
+<path d="M190 120v-22M220 120v-22M250 120v-22M280 120v-22M190 280v22M220 280v22M250 280v22M280 280v22M160 150h-22M160 180h-22M160 210h-22M160 240h-22M320 150h22M320 180h22M320 210h22M320 240h22"/>
+</g>
+<text x="240" y="222" text-anchor="middle" font-size="64" font-weight="800" fill="#fff">AK</text>
+<circle cx="413" cy="139" r="9" fill="#eaaa00"/>
+<circle cx="70" cy="262" r="6" fill="#eaaa00"/>
+<text x="240" y="370" text-anchor="middle" font-size="16" fill="#cfd8e3" letter-spacing="3">SYSTEMS · EDGE AI · EMBEDDED</text>
+</svg>

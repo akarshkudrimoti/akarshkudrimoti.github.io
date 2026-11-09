@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About Me | Akarsh Kudrimoti</title>
+<meta name="description" content="Akarsh Kudrimoti, Computer Engineering student at Georgia Tech. Systems, edge AI, and embedded software.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><nav class="nav"><a class="brand" href="index.html">Akarsh <span>Kudrimoti</span></a>
+<button id="menu" aria-label="Open menu" onclick="document.getElementById('nl').classList.toggle('open')">Menu</button>
+<ul id="nl"><li><a href="index.html">Home</a></li><li><a href="about.html" class=on>About</a></li><li><a href="resume.html">Resume</a></li><li><a href="goals.html">Career Goals</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
+<main>
+<p class="kicker">About me</p><h1>I learn by building the thing.</h1>
+<div class="prose">
+<p>I got into engineering through a robot. In high school at Innovation Academy I captained Storm Robotics, our FIRST Robotics Competition team. FRC gives you six weeks to build a 120-pound machine that has to work in front of a crowd. You learn fast that a design only matters if it survives the field. Leading that team taught me two things I still use: break a big problem into parts people can own, and test early because the robot will find every shortcut you took.</p>
+<p>The summer before college I joined Uncommon Sense Labs as a research intern, training reinforcement learning agents in MuJoCo physics simulations. It was my first time seeing how much engineering sits behind a model that "just works." The model was maybe 10% of the effort. Simulation, reward design, and debugging were the rest.</p>
+<p>At Georgia Tech I chose Computer Engineering because I wanted to understand the whole path, from transistors and registers up to the software people touch. I've kept a 4.0 so far, and I've spent most of my time outside class building. I interned at Stride Labs, an orthotics startup, where I built a React and Node.js ordering system and a 3D foot-scan viewer that cut clinician review time by 90%. Then I joined Alphius as a founding engineer. I built Diligence.AI, a pipeline that reads thousands of pages of company filings a day and turns them into a risk score for private equity teams. That work helped the company earn a term sheet at a $2M valuation, and it taught me what it means to own a product that paying customers depend on.</p>
+<p>Since January 2026 I've written software for the Small Satellite Research Lab, a NASA-funded lab in Athens, Georgia. My first real hardware bug was there: an I2C link between two flight boards that kept failing. A logic analyzer showed the problem in about ten minutes once I knew where to look. That moment pulled me toward embedded systems. This fall I also joined the ANSR Lab, researching how to virtualize compute on satellites, and the NEXS group, studying how serving systems handle AI agents.</p>
+<p>Outside of work I play chess, mostly puzzles and post-game analysis, and I lift almost every day. Both reward the same habit I try to bring to engineering: small, consistent progress that you can measure.</p>
+</div>
+<figure><img src="roadmap.svg" alt="Timeline of my path from starting at Georgia Tech in 2025 to graduating in May 2028"><figcaption>Where I've been and where I'm headed. More detail on the Career Goals page.</figcaption></figure>
+<h2>Skills</h2>
+<div class="grid">
+<div class="card"><h3>Systems &amp; embedded</h3><p>C, C++17, Rust, RISC-V assembly, FreeRTOS, I2C, logic analyzers, Linux, epoll</p></div>
+<div class="card"><h3>AI &amp; infrastructure</h3><p>Python, vLLM, Docker, Kubernetes (k3s), Spark, PostgreSQL, Prometheus, Grafana, Azure, GCP</p></div>
+<div class="card"><h3>Product &amp; web</h3><p>TypeScript, React, Node.js, Django, GraphQL, REST APIs, Three.js</p></div>
+</div>
+</main>
+<footer>© 2026 Akarsh Kudrimoti · Georgia Tech Computer Engineering · <a href="https://github.com/akarshkudrimoti">GitHub</a> · <a href="https://www.linkedin.com/in/akudrimoti">LinkedIn</a></footer>
+</body></html>
