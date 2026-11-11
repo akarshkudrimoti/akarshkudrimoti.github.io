@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" font-family="Inter,Arial,sans-serif">
-<rect width="900" height="240" fill="#fff"/>
-<text x="30" y="38" font-size="20" font-weight="700" fill="#16181d">Crawfish: plan → apply → verify for AI agents</text>
-<defs><marker id="c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9aa3b2"/></marker></defs>
-<g font-size="15" text-anchor="middle" font-weight="700">
-<rect x="40" y="85" width="180" height="80" rx="40" fill="#eaf4ed"/><text x="130" y="131" fill="#16181d">craw plan</text>
-<rect x="260" y="85" width="180" height="80" rx="40" fill="#eaf4ed"/><text x="350" y="131" fill="#16181d">craw apply</text>
-<rect x="480" y="85" width="180" height="80" rx="40" fill="#eaf4ed"/><text x="570" y="131" fill="#16181d">state + replay</text>
-<rect x="700" y="85" width="170" height="80" rx="40" fill="#14532d"/><text x="785" y="131" fill="#fff">signed receipt</text>
-</g>
-<g stroke="#9aa3b2" stroke-width="2.5" marker-end="url(#c)"><line x1="222" y1="125" x2="256" y2="125"/><line x1="442" y1="125" x2="476" y2="125"/><line x1="662" y1="125" x2="696" y2="125"/></g>
-<text x="450" y="205" text-anchor="middle" font-size="13" fill="#5b6170">Every agent run leaves a verifiable record of what it planned, what it did, and what happened</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" font-family="JetBrains Mono,Menlo,monospace"><defs><filter id="gl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<pattern id="gr" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#1d3a27" stroke-width=".6"/></pattern>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#3ddc84"/></marker></defs>
+<rect width="900" height="240" fill="#0b1a11"/><rect width="900" height="240" fill="url(#gr)"/>
+<rect width="900" height="34" fill="#0e2216"/><circle cx="20" cy="17" r="5" fill="#ff5f57"/><circle cx="38" cy="17" r="5" fill="#febc2e"/><circle cx="56" cy="17" r="5" fill="#3ddc84"/>
+<text x="450.0" y="22" text-anchor="middle" font-size="13" fill="#8fb39a">$ craw</text><rect x="40" y="85" width="180" height="70" rx="6" fill="#0e2216" stroke="#3ddc84" stroke-width="1.5"/>
+<text x="130.0" y="116.0" text-anchor="middle" font-size="15" font-weight="700" fill="#e6f5ea">craw plan</text>
+<text x="130.0" y="136.0" text-anchor="middle" font-size="12" fill="#8fb39a">review intent</text><line x1="222" y1="120" x2="256" y2="120" stroke="#3ddc84" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ar)"/><rect x="260" y="85" width="180" height="70" rx="6" fill="#0e2216" stroke="#3ddc84" stroke-width="1.5"/>
+<text x="350.0" y="116.0" text-anchor="middle" font-size="15" font-weight="700" fill="#e6f5ea">craw apply</text>
+<text x="350.0" y="136.0" text-anchor="middle" font-size="12" fill="#8fb39a">run agent</text><line x1="442" y1="120" x2="476" y2="120" stroke="#3ddc84" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ar)"/><rect x="480" y="85" width="180" height="70" rx="6" fill="#0e2216" stroke="#3ddc84" stroke-width="1.5"/>
+<text x="570.0" y="116.0" text-anchor="middle" font-size="15" font-weight="700" fill="#e6f5ea">state/replay</text>
+<text x="570.0" y="136.0" text-anchor="middle" font-size="12" fill="#8fb39a">deterministic</text><line x1="662" y1="120" x2="696" y2="120" stroke="#3ddc84" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ar)"/><rect x="700" y="85" width="170" height="70" rx="6" fill="#3ddc84" stroke="#3ddc84" stroke-width="1.5" filter="url(#gl)"/>
+<text x="785.0" y="116.0" text-anchor="middle" font-size="15" font-weight="700" fill="#04130a">receipt</text>
+<text x="785.0" y="136.0" text-anchor="middle" font-size="12" fill="#04130a">signed + verifiable</text><text x="450" y="205" text-anchor="middle" font-size="12" fill="#8fb39a">every agent run leaves an auditable record</text></svg>

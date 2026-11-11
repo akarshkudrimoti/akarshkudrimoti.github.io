@@ -1,15 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 400" font-family="Inter,Arial,sans-serif">
-<rect width="480" height="400" rx="20" fill="#14532d"/>
-<g stroke="#2f9e5b" stroke-opacity=".35" fill="none">
-<ellipse cx="240" cy="200" rx="200" ry="70" transform="rotate(-18 240 200)"/>
-<ellipse cx="240" cy="200" rx="150" ry="150" stroke-dasharray="4 8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 440" font-family="JetBrains Mono,Menlo,monospace"><defs><filter id="gl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<pattern id="gr" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#1d3a27" stroke-width=".6"/></pattern>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#3ddc84"/></marker></defs>
+<rect width="480" height="440" rx="14" fill="#0b1a11"/><rect width="480" height="440" rx="14" fill="url(#gr)"/>
+<g fill="none" stroke="#3ddc84" stroke-width="2.2" stroke-linecap="round" opacity=".85">
+<path d="M20 70H120L150 100V170H170"/><path d="M20 120H90L110 140V200H170"/><path d="M20 300H100L130 270V240H170"/>
+<path d="M460 90H370L340 120V170H310"/><path d="M460 220H310"/><path d="M460 360H380L340 320V260H310"/>
+<path d="M200 20V80L220 100V140"/><path d="M260 20V140"/><path d="M220 300V350L190 380V420"/><path d="M280 300V420"/>
 </g>
-<rect x="160" y="120" width="160" height="160" rx="18" fill="#1e6b3e" stroke="#2f9e5b" stroke-width="3"/>
-<g stroke="#2f9e5b" stroke-width="3">
-<path d="M190 120v-22M220 120v-22M250 120v-22M280 120v-22M190 280v22M220 280v22M250 280v22M280 280v22M160 150h-22M160 180h-22M160 210h-22M160 240h-22M320 150h22M320 180h22M320 210h22M320 240h22"/>
-</g>
-<text x="240" y="222" text-anchor="middle" font-size="64" font-weight="800" fill="#fff">AK</text>
-<circle cx="413" cy="139" r="9" fill="#86efac"/>
-<circle cx="70" cy="262" r="6" fill="#86efac"/>
-<text x="240" y="370" text-anchor="middle" font-size="16" fill="#d4eadb" letter-spacing="3">SYSTEMS · EDGE AI · EMBEDDED</text>
+<g fill="#0b1a11" stroke="#a7f3c4" stroke-width="2"><circle cx="20" cy="70" r="5"/><circle cx="20" cy="120" r="5"/><circle cx="20" cy="300" r="5"/><circle cx="460" cy="90" r="5"/><circle cx="460" cy="220" r="5"/><circle cx="460" cy="360" r="5"/><circle cx="200" cy="20" r="5"/><circle cx="260" cy="20" r="5"/><circle cx="190" cy="420" r="5"/><circle cx="280" cy="420" r="5"/></g>
+<rect x="170" y="140" width="140" height="160" rx="8" fill="#0e2216" stroke="#3ddc84" stroke-width="2.5" filter="url(#gl)"/>
+<g stroke="#3ddc84" stroke-width="3"><path d="M188 140v-10M188 300v10"/><path d="M214 140v-10M214 300v10"/><path d="M240 140v-10M240 300v10"/><path d="M266 140v-10M266 300v10"/><path d="M292 140v-10M292 300v10"/><path d="M170 160h-10M310 160h10"/><path d="M170 188h-10M310 188h10"/><path d="M170 216h-10M310 216h10"/><path d="M170 244h-10M310 244h10"/><path d="M170 272h-10M310 272h10"/></g>
+<text x="240" y="232" text-anchor="middle" font-size="50" font-weight="700" fill="#3ddc84" filter="url(#gl)">AK</text>
+<text x="240" y="262" text-anchor="middle" font-size="11" fill="#8fb39a">GT-ECE-2028</text>
+<circle cx="190" cy="160" r="4" fill="#3ddc84"/>
+<circle r="5" fill="#a7f3c4" filter="url(#gl)"><animateMotion dur="3s" repeatCount="indefinite" path="M20 70H120L150 100V170H170"/></circle>
+<circle r="5" fill="#a7f3c4" filter="url(#gl)"><animateMotion dur="2.6s" repeatCount="indefinite" path="M460 220H310"/></circle>
+<circle r="5" fill="#a7f3c4" filter="url(#gl)"><animateMotion dur="3.4s" repeatCount="indefinite" path="M280 420V300"/></circle>
 </svg>
